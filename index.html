@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="phone">
+        <!-- header section -->
+        <header>
+          <div class="start-icon-container">
+            <div class="time-date-container" id="current_time"></div>
+          </div>
+
+          <!-- notch section -->
+          <div class="notch-container">
+            <div class="speaker"></div>
+            <div class="camera"></div>
+          </div>
+          <!-- end of notch section -->
+
+          <!-- icon section signal, wifi and battery -->
+          <div class="end-icon-container">
+            <div class="icon-image-container">
+              <img class="signal" src="assets/Icons/signal.ico" alt="icon" />
+              <img class="wifi" src="assets/Icons/wifi.ico" alt="wifi" />
+              <img class="battery" src="assets/Icons/battery.ico" alt="" />
+            </div>
+          </div>
+          <!-- end of icon section -->
+        </header>
+        <!-- end of header section -->
+
+        <!-- main content section -->
+        <div class="main-content">
+            <!-- result section -->
+            <div class="result-container">
+                <div class="result3 text-align-right" id="result3"></div>
+                <div class="result2 text-align-right" id="result2"></div>
+                <div class="result1 text-align-right" id="result1">0</div>
+            </div>
+
+            <!-- buttons section -->
+            <div class="buttons-container">
+                <button class="operators bg-gray-darker" data-value="AC">AC</button>
+                <button class="operators bg-gray-darker" data-value="DEL">DEL</button>
+                <button class="operators bg-gray-darker" data-value="%">%</button>
+                <button class="operators bg-darker" data-value="/">/</button>
+                <button class="numbers" data-value="7">7</button>
+                <button class="numbers" data-value="8">8</button>
+                <button class="numbers" data-value="9">9</button>
+                <button class="operators bg-darker" data-value="*">*</button>
+                <button class="numbers" data-value="4">4</button>
+                <button class="numbers" data-value="5">5</button>
+                <button class="numbers" data-value="6">6</button>
+                <button class="operators bg-darker" data-value="-">-</button>
+                <button class="numbers" data-value="1">1</button>
+                <button class="numbers" data-value="2">2</button>
+                <button class="numbers" data-value="3">3</button>
+                <button class="operators bg-darker" data-value="+">+</button>
+                <button class="numbers" data-value="0">0</button>
+                <button data-value=".">.</button>
+                <button class="operators bg-darker" id="equal" data-value="=">=</button>
+            </div>
+        </div>
+
+        <!-- footer section -->
+        <footer>
+          <div class="visual-swipe"></div>
+        </footer>
+        <!-- end of footer section -->
+      </div>
+    </div>
+    <!-- scripting -->
+    <script src="assets/script.js"></script>
+  </body>
+</html>
